@@ -1,0 +1,77 @@
+
+.project2{
+    
+    
+    width: 100%;
+    @include center();
+
+    .main_box{
+        width: 90%;
+        height: 700px;
+        @include between();
+    
+        .box1{
+            // z-index: -1;
+            position: relative;
+            width: 546px;
+            height: 324px;
+            background-image: url('https://mgsdemo.mgscoder.com/html5/acutip/images/portfolio/7.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+            .box_b{
+                width: 100px;
+                height: 100px;         
+                position: absolute;
+                transition: 1s;
+                
+                &:hover{
+                    width: 546px;
+                    height: 324px;
+                    background-color: rgba($color: #000000, $alpha: .7);
+                    
+                }
+    
+            } 
+        }
+        .con_box2{
+            width: 50%;
+            // background-color: rebeccapurple;
+        }
+        .box2{
+            // background-color: olivedrab;
+            width: 100%;
+            @include center();
+            &:hover{
+                border-radius: 10px;
+                padding: 10px;
+                background-color: rgba($color: #000000, $alpha: .1);
+            }
+            .box2_b{
+                width: 90%;
+            }
+           
+        }
+        a{
+            margin: 40px;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: blue;
+            
+            color: white;
+            transition: 2s;
+            &:hover{
+                color: blue;
+                background-color: white;
+            }
+        }
+    }
+
+
+
+
+
+}

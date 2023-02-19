@@ -1,0 +1,49 @@
+.full{
+    width: 100%;
+    background-color: burlywood;
+    @include center();
+    .full-con{
+        width: 89%;
+        background-color: paleturquoise;
+        .picture{
+            width: 100%;
+            background-color: orange;
+            @include between_wrap();
+            .main-box{
+                position: relative;
+                @include center();
+                background-color: royalblue;
+
+                .read-more{
+                    opacity: 0;
+                    width: 100%;
+                    height: 300px;
+                    position: absolute;
+                    background-color: rgba($color: #000000, $alpha: .7);
+                    color: white;
+                    transition: 1s;
+                    @include center();
+                    .icon-con{
+                        @include center();
+                        a{
+                            color: $myorange;
+                            border: 2px solid $myorange;
+                            margin-left: 10px;
+                            font-size: 20px;
+                            padding: 10px;
+                         }
+                         
+                    }
+
+                }
+                &:hover{
+                    .read-more{
+                        opacity: 1;
+                        width: 100%;
+
+                    }
+                }
+            }
+        }
+    }
+}
